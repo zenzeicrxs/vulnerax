@@ -21,7 +21,7 @@
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #2d465e; /* Color for headings, subheadings and title throughout the website */
+  --heading-color: #1c2f41; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #DE1A34; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
@@ -675,8 +675,12 @@ section,
   section,
   .section {
     scroll-margin-top: 66px;
+    padding: 10px 0;
   }
+  
 }
+
+
 
 /*--------------------------------------------------------------
 # Global Section Titles
@@ -684,6 +688,7 @@ section,
 .section-title {
   text-align: center;
   padding-bottom: 60px;
+  padding-top: 50px;
   position: relative;
 }
 
@@ -766,6 +771,7 @@ section,
 @media (max-width: 575px) {
   .hero .hero-content h1 {
     font-size: 2rem;
+
   }
 }
 
@@ -804,7 +810,7 @@ section,
   font-weight: 500;
   transition: all 0.3s ease;
 }
-
+--
 .hero .btn-link:hover {
   color: var(--accent-color);
 }
@@ -937,10 +943,15 @@ section,
   margin: 0;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 992px) {
   .hero .stat-item {
     padding: 1.5rem;
   }
+
+  .hero .hero-image img {
+    display: none;
+  }
+  
 }
 
 @keyframes float-badge {
@@ -979,6 +990,14 @@ section,
     font-size: 2rem;
   }
 }
+
+@media (max-width: 575px) {
+  .about {
+    
+    text-align: center;
+  }
+}
+
 
 .about .about-description {
   margin-bottom: 2rem;
@@ -1052,7 +1071,6 @@ section,
 .about .image-wrapper {
   position: relative;
 }
-
 @media (max-width: 992px) {
   .about .image-wrapper {
     padding-left: 0;
@@ -1064,16 +1082,22 @@ section,
 }
 
 @media (max-width: 992px) {
+  .row .feature-list-wrapper  {
+    text-align: left;
+  }
+}
+
+
+@media (max-width: 992px) {
   .about .image-wrapper .images {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    display: none;
   }
 }
 
 @media (max-width: 992px) {
   .about .image-wrapper .main-image {
     margin-left: 0;
+    display: none;
   }
 }
 
@@ -1109,9 +1133,7 @@ section,
 
 @media (max-width: 992px) {
   .about .image-wrapper .experience-badge {
-    position: static;
-    width: fit-content;
-    margin: 0 auto;
+    display: none;
   }
 }
 
@@ -2327,4 +2349,27 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.gambar1 {
+  width: 10px;
+}
+
+
+@media (max-width: 992px) {
+  .img-fluid {
+    display: none;
+  }
+
+  .call-to-action {
+    padding: 60px;
+  }
+  
+  .col-md-3 {
+    text-align: center;
+    
+  }.footer {
+    display: ;
+    
+  }
 }
