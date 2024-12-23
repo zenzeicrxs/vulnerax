@@ -2369,7 +2369,18 @@ section,
     text-align: center;
     
   }.footer {
-    display: ;
+    display: none;
     
+  }
+}
+
+
+.spacing {
+  height: 150px;
+}
+
+@media (max-width: 992px) {
+  .spacing {
+    height: 80px;
   }
 }
